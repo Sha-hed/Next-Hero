@@ -1,5 +1,5 @@
 import React from 'react';
-
+export const runtime = "edge"
 const getData = async (id) => {
     const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
     const data = res.json();
