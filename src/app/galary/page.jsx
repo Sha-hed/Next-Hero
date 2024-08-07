@@ -9,17 +9,11 @@ const page = () => {
             <div>
                 {
                     [1, 2, 3, 4].map(img => <Image
+                        alt="Hello"
                         key={`/images/${img}.jpg`}
                         src={`/images/${img}.jpg`}
                         width={1920} height={1080}
                     ></Image>)
-                }
-                {
-                    [1, 2, 3, 4].map(img => <img
-                        key={`/images/${img}.jpg`}
-                        src={`/images/${img}.jpg`}
-                        width={1920} height={1080}
-                    ></img>)
                 }
             </div>
             <h1>Welcome to Galary Page Man!!</h1>

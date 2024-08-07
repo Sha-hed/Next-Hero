@@ -1,7 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // images: {
+  //   domains: ["www.themealdb.com", "https://api.themoviedb.org/"],
+  // },
   images: {
-    domains: ["www.themealdb.com", "https://api.themoviedb.org/"],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'www.themealdb.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
   },
 };
 
